@@ -1,0 +1,25 @@
+{
+  "role": "Backend Developer",
+  "readiness_score": 72,
+  "confidence_level": "High",
+  "strengths": [
+    "Java and SQL fundamentals",
+    "REST API development",
+    "Backend project experience"
+  ],
+  "skill_gaps": [
+    "Cloud deployment",
+    "System design",
+    "API security"
+  ],
+  "next_steps": [
+    "Deploy a Spring Boot application on Google Cloud",
+    "Practice system design interview problems",
+    "Implement JWT-based authentication"
+  ],
+  "evidence": {
+    "REST APIs": "Built backend services using Spring Boot",
+    "SQL": "Used SQL databases in backend projects",
+    "Java": "Developed backend applications using Java"
+  }
+}

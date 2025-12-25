@@ -28,24 +28,31 @@ for role in roles:
 
     if USE_MOCK_OUTPUT:
         mock_response = {
-            "role": role,
-            "readiness_score": 72 if role == "Backend Developer" else 45,
-            "strengths": [
-                "Java and SQL fundamentals",
-                "REST API development",
-                "Backend project experience"
-            ],
-            "skill_gaps": [
-                "Cloud deployment",
-                "System design",
-                "Advanced analytics" if role == "Data Analyst" else "API security"
-            ],
-            "next_steps": [
-                "Deploy a project on Google Cloud",
-                "Practice role-specific interview questions",
-                "Strengthen missing core skills"
-            ]
-        }
+    "role": role,
+    "readiness_score": 72 if role == "Backend Developer" else 45,
+    "confidence_level": "High" if role == "Backend Developer" else "Medium",
+    "strengths": [
+        "Java and SQL fundamentals",
+        "REST API development",
+        "Backend project experience"
+    ],
+    "skill_gaps": [
+        "Cloud deployment",
+        "System design",
+        "Advanced analytics" if role == "Data Analyst" else "API security"
+    ],
+    "next_steps": [
+        "Deploy a project on Google Cloud Run",
+        "Practice role-specific interview questions",
+        "Strengthen missing core skills"
+    ],
+    "evidence": {
+        "REST APIs": "Built backend services using Spring Boot",
+        "SQL": "Worked with SQL databases in backend projects",
+        "Java": "Used Java for backend application development"
+    }
+}
+
 
         print(json.dumps(mock_response, indent=2))
 
