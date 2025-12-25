@@ -7,6 +7,18 @@ Target Role: {{ROLE}}
 Resume Content:
 {{RESUME_TEXT}}
 
+
+Task:
+1. Identify all technical skills claimed in the resume.
+2. Identify which of those skills have clear evidence (projects, experience, tools used).
+3. List skills that are claimed but NOT supported by evidence.
+
+Output strictly in valid JSON:
+
+{
+  "weak_claims": [string]
+}
+
 Return the evaluation strictly in valid JSON with this structure:
 
 {
@@ -32,3 +44,5 @@ Rules:
 - Evidence must reference resume content
 - Be objective and role-specific
 - Output JSON only
+- Do NOT assume skills.
+

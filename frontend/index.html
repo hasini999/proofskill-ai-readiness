@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProofSkill – AI Placement Readiness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎓 ProofSkill</h1>
+  <p>Upload your resume and evaluate placement readiness</p>
+
+  <input type="file" id="resumeFile" accept=".txt">
+  
+  <select id="role">
+    <option value="Backend Developer">Backend Developer</option>
+    <option value="Data Analyst">Data Analyst</option>
+    <option value="Frontend Developer">Frontend Developer</option>
+  </select>
+
+  <!-- 🔥 IMPORTANT FIX -->
+  <button id="evaluateBtn">Evaluate Readiness</button>
+
+  <div id="result" class="card" style="display:none;"></div>
+</div>
+
+<!-- 🔥 SCRIPT MUST BE AT BOTTOM -->
+<script src="script.js"></script>
+</body>
+</html>

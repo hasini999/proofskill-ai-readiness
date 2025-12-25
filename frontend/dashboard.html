@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProofSkill Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <h1>📊 ProofSkill – Readiness Dashboard</h1>
+
+  <div class="score-card">
+    <h2>Readiness Score</h2>
+    <div id="score">--</div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>✅ Strengths</h3>
+      <ul id="strengths"></ul>
+    </div>
+
+    <div class="card">
+      <h3>⚠️ Skill Gaps</h3>
+      <ul id="gaps"></ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Action Plan</h3>
+    <ul id="actions"></ul>
+  </div>
+
+  <button onclick="downloadPDF()">📄 Download PDF Report</button>
+</div>
+
+<script src="report.js"></script>
+</body>
+</html>
