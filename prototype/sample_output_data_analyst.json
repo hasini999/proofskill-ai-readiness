@@ -1,0 +1,19 @@
+{
+  "role": "Data Analyst",
+  "readiness_score": 45,
+  "strengths": [
+    "SQL basics",
+    "Logical thinking",
+    "Data handling fundamentals"
+  ],
+  "skill_gaps": [
+    "Python for data analysis",
+    "Statistics",
+    "Visualization tools"
+  ],
+  "next_steps": [
+    "Learn pandas and NumPy",
+    "Practice statistics problems",
+    "Build a data analysis mini-project"
+  ]
+}
