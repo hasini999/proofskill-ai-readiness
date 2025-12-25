@@ -1,0 +1,18 @@
+Target Role: Backend Developer
+
+Readiness Score: 68/100
+
+Strengths:
+- REST API development
+- SQL and database basics
+- Java fundamentals
+
+Skill Gaps:
+- System design concepts
+- Cloud deployment experience
+- Scalability understanding
+
+Next Steps:
+- Build and deploy one scalable backend service
+- Learn basic system design patterns
+- Practice cloud-based project deployment
