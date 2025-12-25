@@ -31,29 +31,32 @@ for role in roles:
     "role": role,
     "readiness_score": 72 if role == "Backend Developer" else 45,
     "confidence_level": "High" if role == "Backend Developer" else "Medium",
+    "score_reasoning": "Strong core programming skills but limited real-world deployment and design experience.",
     "strengths": [
         "Java and SQL fundamentals",
         "REST API development",
         "Backend project experience"
     ],
     "skill_gaps": [
-        "Cloud deployment",
-        "System design",
-        "Advanced analytics" if role == "Data Analyst" else "API security"
+        {
+            "skill": "System Design",
+            "recommendation": "Learn basic system design patterns and design a URL shortener"
+        },
+        {
+            "skill": "Cloud Deployment",
+            "recommendation": "Deploy a Spring Boot application on Google Cloud Run"
+        }
     ],
-    "next_steps": [
-        "Deploy a project on Google Cloud Run",
-        "Practice role-specific interview questions",
-        "Strengthen missing core skills"
+    "weak_claims": [
+        "Docker",
+        "Microservices"
     ],
     "evidence": {
         "REST APIs": "Built backend services using Spring Boot",
-        "SQL": "Worked with SQL databases in backend projects",
-        "Java": "Used Java for backend application development"
+        "SQL": "Used SQL databases in backend projects",
+        "Java": "Developed backend applications using Java"
     }
 }
-
-
         print(json.dumps(mock_response, indent=2))
 
     else:

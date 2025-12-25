@@ -1,3 +1,5 @@
+You are an AI placement readiness evaluator.
+
 Evaluate the following resume against the specified target job role.
 
 Target Role: {{ROLE}}
@@ -5,22 +7,28 @@ Target Role: {{ROLE}}
 Resume Content:
 {{RESUME_TEXT}}
 
-Return the evaluation strictly in valid JSON format with the following structure:
+Return the evaluation strictly in valid JSON with this structure:
 
 {
   "role": "{{ROLE}}",
   "readiness_score": number,
   "confidence_level": "High | Medium | Low",
+  "score_reasoning": "short explanation (2–3 lines)",
   "strengths": [string],
-  "skill_gaps": [string],
-  "next_steps": [string],
+  "skill_gaps": [
+    {
+      "skill": string,
+      "recommendation": "what to learn or practice next"
+    }
+  ],
+  "weak_claims": [string],
   "evidence": {
     "skill_name": "resume evidence supporting the skill"
   }
 }
 
 Rules:
-- Evidence must directly reference resume content
-- Do not infer skills without evidence
+- Weak claims = skills mentioned without clear evidence
+- Evidence must reference resume content
 - Be objective and role-specific
-- Output JSON only (no explanations)
+- Output JSON only
