@@ -6,7 +6,11 @@ model = genai.GenerativeModel("gemini-pro")
 
 role = "Backend Developer"
 resume_text = """
-Sample resume content here.
+
+Computer Science undergraduate with experience in Java, SQL, and REST APIs.
+Built backend services using Spring Boot.
+Basic knowledge of cloud concepts and RESTful services.
+
 """
 
 prompt = f"""
