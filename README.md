@@ -1,78 +1,101 @@
-# ProofSkill – AI Placement Readiness Verifier
+# ProofSkill – AI Placement Readiness Verifier 🚀
 
-ProofSkill is a prototype AI system that evaluates a student’s placement readiness for a specific job role using **Google Gemini AI reasoning**.
-
-The focus of this prototype is **AI-driven evaluation logic**, not UI or infrastructure.
+ProofSkill is an AI-powered system that objectively evaluates a student’s placement readiness for a specific job role by analyzing their resume using Google Gemini API.
 
 ---
 
-## 🚀 Key Features
+## 🎯 Problem Statement
 
-* Role-specific resume evaluation
-* AI-generated readiness score
-* Skill gap identification
-* Actionable, role-aligned improvement guidance
-* **Structured JSON output for system integration**
-* **Role comparison using the same resume**
+Many students apply for jobs without knowing whether their current skills and experience match the expectations of the role. Existing platforms focus on resume formatting or generic feedback, but do not provide role-specific readiness validation.
 
 ---
 
-## 🧠 How It Works
+## 💡 Proposed Solution
 
-1. A resume and target job role are provided as input
-2. Gemini AI evaluates role alignment and skill coverage
-3. The system returns a **structured JSON evaluation**
-4. Multiple roles can be compared using the same resume
+ProofSkill uses Google’s Generative AI to analyze a resume against a selected job role and provides:
 
----
+- A placement readiness score
+- Identified strengths
+- Skill gaps
+- Clear, actionable next steps to improve employability
 
-## 🔧 Google Technologies Used
-
-* Google Gemini API
-* Firebase (planned)
-* Google Cloud Run (planned)
+This helps students make informed decisions before applying for jobs.
 
 ---
 
-## 📦 Prototype Scope
+## 🧠 Key Features
 
-This repository contains an early-stage prototype developed for the **GDG InnovateX Hackathon**.
-It demonstrates:
-
-* AI reasoning capability
-* Role-aware evaluation
-* Integration-ready output design
-
----
-
-## ▶️ How to Run (Optional)
-
-1. Add your Gemini API key in `prototype/app.py`
-2. Update the resume text and target roles
-3. Run:
-
-   ```
-   python prototype/app.py
-   ```
-
-> **Note:**
->
-> * Mock execution mode is supported when an API key is not provided
-> * Sample outputs are included for evaluation reference
+- Resume upload (PDF / TXT)
+- Role-based AI evaluation
+- AI-generated readiness score (0–100)
+- Strength & skill gap analysis
+- Simple dashboard-style result display
 
 ---
 
-## 📄 Sample Outputs
+## 🏗️ System Architecture
 
-* `prototype/sample_output_backend.json`
-* `prototype/sample_output_data_analyst.json`
-* Execution screenshot available in `docs/demo_output.png`
+Frontend (HTML/CSS/JS)  
+→ FastAPI Backend  
+→ Google Gemini API  
+→ AI Evaluation  
+→ Readiness Dashboard
+
+(Architecture diagram available in `/architecture` folder)
+
+---
+
+## 🧰 Technology Stack
+
+### Google Technologies Used
+- **Gemini API** – Core AI reasoning and evaluation
+- **Google Generative AI Services** – Resume analysis and feedback generation
+- **Google Cloud Run (Planned)** – Scalable backend deployment
+- **Firebase (Planned)** – Authentication and user data storage
+
+### Other Tools & Frameworks
+- FastAPI (Python backend)
+- HTML, CSS, JavaScript (Frontend)
+- Git & GitHub
+
+---
+
+## 🤖 Google AI Tools Integrated
+
+- **Gemini API**
+- **Generative AI (LLM-based reasoning)**
+
+Gemini is used to perform role-specific reasoning, scoring, and feedback generation based on resume content.
+
+---
+
+## 🔬 Prototype Scope
+
+This repository contains a functional prototype developed for the **GDG InnovateX Hackathon** that demonstrates:
+
+- Real resume upload
+- Backend API for evaluation
+- Integration with Gemini AI
+- Dashboard-style result presentation
+
+The prototype focuses on core logic and usability rather than a fully deployed production system.
 
 ---
 
 ## 🔮 Future Scope
 
-* Mock interview simulations
-* Multilingual resume evaluation
-* Voice-based interaction
-* Recruiter-side verification dashboard
+- Mock interview simulation using AI
+- Recruiter-side verification dashboard
+- Skill-wise personalized learning roadmap
+- Firebase authentication
+- Cloud Run deployment for scalability
+- Downloadable AI evaluation report (PDF)
+
+---
+
+## 👥 Team
+
+**LogicSmiths**  
+GDG InnovateX Hackathon – GDG On Campus BVRIT
+
+
